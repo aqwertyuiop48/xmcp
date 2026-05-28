@@ -102,9 +102,12 @@ The start script will automatically run either the HTTP or STDIO transport depen
 ## Sample curl request for this app
 
 <pre>
+Request:
 curl -X POST https://xmcp-nu.vercel.app/mcp \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}'
+
+Response:
 {"result":{"tools":[{"name":"greet","description":"Greet the user","inputSchema":{"type":"object","properties":{"name":{"type":"string","description":"The name of the user to greet"}},"required":["name"],"additionalProperties":false,"$schema":"http://json-schema.org/draft-07/schema#"},"annotations":{"title":"Greet the user","readOnlyHint":true,"destructiveHint":false,"idempotentHint":true}}]},"jsonrpc":"2.0","id":1}
 </pre>
