@@ -104,7 +104,7 @@ The start script will automatically run either the HTTP or STDIO transport depen
 
 <pre>
 Request:
-curl -X POST https://xmcp-nu.vercel.app/mcp \
+curl -X POST https://xmcp-rho.vercel.app/mcp \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}'
